@@ -1,1 +1,65 @@
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Vishalini_Assignment 3</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+    <body class="body">
+        <div class="parent">
+            <div class="subparent">
+            <h1><center>Assignment 3</center></h1>
+            <h5><center>IBM Object storage</center></h5>
+            <div class="child">
+              <img src="image/ibmobj.jpg" class="image">
+            </div>
+            <div class="child">
+              <img src="image/virtualassistant1.jpg" class="image">
+            </div>
+            <div class="child">
+             <img src="image/image1.jpg" class="image">
+            </div>
+            <div class="child">
+             <img src="image/hospital1.jpg" class="image"> 
+            </div>
+            <div class="child">
+                <img src="image/doc.png" class="image">
+            </div>
+            </div>
+            <div class="subparent">
+                <h3>
+                <ol>
+                    <li>Create a Bucket in IBM object storage.</li>
+                    <li>
+                    Upload an 5 images to ibm object storage and make it public. write html
+                    code to displaying all the 5 images.
+                    </li>
+                    <li>
+                    Upload a css page to the object storage and use the same page in your
+                    HTML code.
+                    </li>
+                    <li>
+                    Design a chatbot using IBM Watson assistant for hospital. Ex: User comes
+                    with query to know the branches for that hospital in your city. Submit
+                    the web URL of that chat bot as a assignment.
+                    </li>
+                    <li>
+                    Create Watson assistant service with 10 steps and use 3 conditions in
+                    it. Load that script in HTML page.
+                    </li>
+                 </ol>
+                 </h3>
+                 </div>
+    
+			
+    </body>
+    <script> window.watsonAssistantChatOptions = {
+         integrationID: "08a6eea3-1350-469f-b8d9-50c8611e23de", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in. 
+         serviceInstanceID: "3b6b6fb6-dd0d-40f5-9af5-31671e0c29cd", // The ID of your service instance.
+     onLoad: function(instance) { instance.render(); } }; 
+     setTimeout(function(){ const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+       document.head.appendChild(t); }); 
+    </script>
+</html>
